@@ -17,9 +17,8 @@ body {
   flex-wrap: wrap;
 }
 
-.wrapper, .container, header, footer {
+.wrapper, .container {
   display: flex;
-  /*flex-wrap: wrap;*/
   min-width: 320px;
   width: 100%;
 }
@@ -45,11 +44,6 @@ section {
 
 .footer_container {  
   margin-bottom: 16rem;
-}
-
-header, footer,{
-  flex-direction: column;
-  position: relative;
 }
 
 header, footer {
@@ -159,7 +153,7 @@ h3 {
    font-size: 5vmin;
 }
 
-h3 span{
+h3 span {
   position: relative;
   left: 0;
   font-size: 0.4em;
@@ -205,7 +199,6 @@ h3 span:after {
 
 .ol_athlets h2{
     padding-left: 10%;
-
 }
 
 p {
@@ -564,10 +557,6 @@ footer {
     background-image: url("https://raw.githubusercontent.com/VeraKoptelova/diplomsport/master/images/footer768.jpg");
   }
 
-  .wrapper {
-     padding: 5% 0;
-  }
-  
   li {
     min-height: 200px;
   }
@@ -819,22 +808,10 @@ footer {
     top: 37%;
   }
 
-  /*.action li:last-of-type h3 {
-    margin-top: 3.3em;
-    margin-left: 1.65em;
-  }
-
-  /*.action li:last-of-type p {
-    margin-top: 4.1em;
-    margin-left: 5.5em;
-    width: 60%;
-  }*/
-
   .logo_text {
     width: 190px;
     height: 55px;
     align-self: center;
-
   }
 
   .logo {
@@ -859,8 +836,6 @@ footer {
     width: 40px;
     height: 50px;
   } 
-
-    
 }
 
 @media (min-width: 1921px) {
