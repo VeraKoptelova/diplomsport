@@ -1,0 +1,790 @@
+* {
+  	box-sizing: border-box;
+  	margin: 0;
+  	padding: 0;
+}
+
+html {
+  font-family: Open Sans, Arial, sans-serif;
+  color: #000;
+  font-size: 62.5%;
+}
+
+body {
+  min-width: 320px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.wrapper_header, .wrapper_footer, .container {
+  display: flex;
+  width: 100%;
+}
+
+.wrapper_header, .wrapper_footer {
+  flex-direction: column;
+  align-items: center;
+  padding: 10% 0;
+  color: white;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+
+.players, .athlets {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer_container {
+  display: flex;
+  flex-wrap: wrap;  
+}
+
+header, footer {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  position: relative;
+}
+
+header::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(10, 14, 52, 0.85);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+footer::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(10, 14, 52, 0.85);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+p {
+  margin: 1em 0;
+  font-size: 0.9vw;
+  font-weight: normal;
+  letter-spacing: 1.4px
+}
+
+.buttons {
+  display: flex;
+  margin-top: 15.5em;
+  position: relative;
+  width: 70%;
+} 
+
+.button {
+  background: #5c42b0;
+  text-align: left;
+  color: white;
+  border-radius: 50px;
+  padding: 10px 0;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+.button_span {
+  margin-left: 1rem;
+  font-size: 2vmin;
+  line-height: 0.5em;
+  left: 10%;
+}
+
+.num_big {
+  background: #5c42b0;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  z-index: 1;
+  position: absolute;
+}
+
+.num_big span {
+  margin: auto;
+  font-weight: bold;
+  position: relative;
+  font-size: 1.4vw;
+}
+
+.num_big span:after {
+  position: absolute;
+  background-color: #917bce;
+  content: "";
+  width: 100%;
+  height: 5px;
+  border-radius: 2px;
+  bottom: -5px;
+  left: 0;
+}
+
+.num_big {
+  width: 5em;
+  height: 5em;
+  font-size: 1.56vw;
+}
+
+.num_big span:after {
+  position: absolute;
+  background-color: #917bce;
+  content: "";
+  width: 100%;
+  height: 3px;
+  border-radius: 2px;
+  bottom: -5px;
+  left: 0;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.log_footer {
+  width: 100px;
+  height: 100px;
+}
+
+.athlets .imag {
+  position: absolute;
+}
+
+.players .imag {
+  position: absolute;
+  right: 0%;
+  overflow: hidden;
+  margin:-15px -120px 
+}
+
+.opportunities li {
+  min-height: 220px;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 320px;
+  width: 100%;
+  padding: 0 10%;
+}
+
+h2, h3, h4, h5 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 4.5vw;
+  color: #e7e7e7;
+  }
+
+h3 {
+  color: #dddddd;
+  font-size: 4.5vw;
+}  
+
+h4 {
+   color: #dddddd;
+   font-size: 2vw;
+}  
+
+h5 {
+   color: #dddddd;
+   font-size: 4.4vw;
+}
+
+h4 span {
+  position: relative;
+  font-size: 1vw;
+  color: #000;
+  vertical-align: super;
+}
+
+h4 span:after {
+  position: absolute;
+  background-color: #5f3cb6;
+  content: "";
+  width: 100%;
+  height: 5px;
+  border-radius: 2px;
+  bottom: -5px;
+  left: 0;
+}
+
+.growth {
+  background-color: #5e42b0;
+  color: white;
+}
+
+.players .growth {
+  background: #0a0e34;
+  color: white;
+}
+
+.players .growth {
+  background: #151133;
+  color: white;
+}
+
+.players .growth span {
+  color: #A297CC;
+}
+
+.growth span:after {
+  background-color: #fff;
+}
+
+.connection {
+  background: #fafafa;
+}
+
+.collaboration {
+  background: #F5F2F9;
+}
+
+.action__text {
+  width: 50%;
+  padding: 10% 7%;
+}
+
+.action .post {
+  list-style-type: none;
+  position: relative;
+  padding-bottom: 4em;
+  letter-spacing: 2px;
+  line-height: 1.2;
+}
+
+.action .post {
+  display: flex;
+  padding-bottom: 0;
+}
+
+.post .pix {
+  width: 50%;
+  display: flex;
+}
+
+.action__pic {
+  width: 100%;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: auto;
+  margin-bottom: auto;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.logo {
+  display: flex;
+  background: #5c42b0;
+  border-radius: 20px;
+  position: relative;
+}
+
+.title_foot {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2em;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.log_footer {
+ margin: auto;
+}
+
+.logo_text {
+  position: relative
+}
+
+.logo_foot {
+  width: 190px;
+  height: 55px;
+  align-self: center;
+  margin-top: 10%;
+  position: relative
+}
+
+.button:hover {
+  background: #4d3191;
+  color: #bdace3;
+}
+
+.title_foot span {
+  color: #917bce;
+  margin-top: 0;
+  margin-left: 0;
+  text-transform: uppercase;
+  font-size: 1.5vw;
+}
+
+@media (max-width: 640px) {
+  header {
+    justify-content: space-around;
+    background-image: url("https://raw.githubusercontent.com/VeraKoptelova/diplomsport/master/images/header320.jpg");
+  }
+
+  footer {
+    background-image: url("https://raw.githubusercontent.com/VeraKoptelova/diplomsport/master/images/footer320.jpg");
+  }
+
+  .wrapper_header {
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+  }
+
+  .wrapper_header h1 {    
+    letter-spacing: 2.6px;
+    margin-top: 0;
+    margin-left: 0.8em;
+    line-height: 1.3;
+  }
+
+  .wrapper_header h1 span {
+    display: block;
+    margin-left: 1.7em;
+    margin-bottom: 2.7em;
+  }
+
+  .title {
+    padding-top: 20%;
+    padding-left: 10px;
+  }
+
+  h1 {
+    align-items: flex-start;
+    font-size: 6.5vw;
+    width: 90%;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  .athlets h3 {
+    margin-top: 1rem;
+    align-self: flex-start;
+    padding-left: 10%;
+    order: -1;
+    font-size: 5em;
+  }
+
+  .players h3 {
+    margin-top: 1rem;
+    padding-left: 10%;
+    order: -1;
+    font-size: 5em;
+  }
+
+  h4 {
+    font-size: 26px;
+  }
+
+  h4 span {
+    font-size: 10px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  h5 {
+    font-size: 26px;
+  }
+
+  .num_big span {
+    font-size: 10px;
+  }
+
+  .num_big span:after {
+    height: 3px;
+  }
+
+  .athlets .imag {
+    position: relative;
+    left: 20%;
+  }
+
+  .players .imag {
+    position: relative;
+    left: 38%;
+  }
+
+  .action .post {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .post .pix {
+    width: 100%;
+  }
+    
+  .action__pic {
+    width: 100%;
+    min-height: 1px;
+  }
+
+  .action__text {
+    width: 100%;
+    padding-left: 5%;
+    padding-top: 10%;
+  }
+
+  .num_big {
+    margin-left: 2rem;
+    margin-top: 24em;
+    font-size: 4vmin;
+  }  
+  
+  .buttons {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    width: 208px;
+  }
+
+  .button {
+    width: 87.5%;
+    font-size: 0.5rem;
+    padding-bottom: 1em;
+    padding-top: 0.5em;
+    margin-bottom: 1.88em;
+    letter-spacing: 0.3px;
+  }
+
+  .buttons .icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .wrapper_footer {
+    padding-top: 70px;
+  }
+
+  .logo_text {
+    width: 133px;
+    height: 36px;
+  }
+  
+  .logo {
+    width: 72px;
+    height: 72px; 
+  }
+  
+  .log_footer {
+    width: 56px;
+    height: 56px;
+  }
+
+  .title_foot {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-left: 0;
+  }
+
+  .title_foot span {
+    font-size: 14px;
+  }
+
+  .footer_container {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }  
+
+  .logo_foot {
+    width: 100px;
+    height: 55px;
+    align-self: center;
+    margin-top: 10%;
+    position: relative;
+  }  
+
+  .button p {
+    font-size: 2vmin;
+    line-height: 0.5em;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 960px) {
+  header {
+    background-image: url("https://raw.githubusercontent.com/VeraKoptelova/diplomsport/master/images/header768.jpg");
+  }
+  footer {
+    background-image: url("https://raw.githubusercontent.com/VeraKoptelova/diplomsport/master/images/footer768.jpg");
+  }
+
+  .wrapper_header h1 {
+    margin-top: 0;
+    margin-left: 7%;
+    margin-bottom: 0;    
+    letter-spacing: 4px;
+    line-height: 1.1;
+  }
+  
+  .wrapper_header h1 span {
+    display: block;
+    margin-left: 17%;
+    margin-top: 0.2em;
+    margin-bottom: 0.1em;
+    padding: 0;
+  }
+
+  h1 {
+    font-size: 8vw;
+    width: 80%;
+  }
+
+  .logo_text {
+    width: 27vw;
+    height: 7vw;
+    margin-bottom: 200px;
+  }
+
+  .buttons {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 0;
+  }
+
+  p {
+    font-size: 1.3vw;
+  }
+
+  h2 {
+    font-size: 7.55vw;
+  }
+
+  h3 {
+    font-size: 7.55vw;
+  }
+
+  h4 {
+    font-size: 3.1vw;
+  }
+
+  h4 span {
+    font-size: 1.1vw;
+  }
+
+  .players p {
+    font-size: 1.3vw;
+  }
+
+  h5 {
+    font-size: 7.4vw;
+  }
+
+  .logo {
+    align-items: center;
+    width: 17vw;
+    height: 17vw;
+    margin-bottom: 80px; 
+  }
+
+  .title_span {
+    width: 90%;
+  }
+
+  .athlets li {
+    padding-left: 37%;
+    padding-top: 0;
+    padding-bottom: 1.5em;
+  }
+
+  .athlets h3 {
+    margin-left: 37%;
+    margin-top: 0.7em;
+  }
+
+  .players h3{
+    margin-left: 10%;
+    margin-top: 0.7em;
+  }
+
+  .players .imag {
+    overflow: hidden;
+    margin:-15px -10px -30px -10px;
+  }
+
+  .action .post {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .post .pix {
+    width: 100%;
+  }
+
+  .action__text {
+    width: 100%;
+    padding: 7% 5%;
+  }
+
+  .opportunities li {
+    min-height: 190px;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 320px;
+    width: 100%;
+  }  
+
+  .players p {
+    width: 60%;
+  }  
+
+  .action__pic {
+    width: 100%;
+    min-height: 1px;
+  }
+
+  .num_big {
+    margin-left: 1.5em;
+    margin-top: 71vw;
+  }
+
+  .action .post {
+    padding-bottom: 1.7em;
+  }
+
+  .action__text h2 {
+    font-size: 6em;
+  }
+
+  .title_foot span {
+    font-size: 3.5vw;
+  }
+
+  .footer_container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+  }  
+
+  .button {
+    width: 45%;
+    margin-top: 315px;
+  }  
+
+  .buttons .icon {
+    width: 45px;
+    height: 45px;
+  } 
+}
+
+@media (min-width: 961px)  {
+  header {
+    background-image: url("https://raw.githubusercontent.com/VeraKoptelova/diplomsport/master/images/headerdesktop.jpg");
+  }
+  footer {
+    background-image: url("https://raw.githubusercontent.com/VeraKoptelova/diplomsport/master/images/footerdesktop.jpg");
+  }
+  
+  .wrapper_header h1 {
+    position: relative;
+    font-size: 5vw;
+    margin-top: 3.26em;
+    margin-bottom: 0;
+    letter-spacing: 6px;
+    line-height: 1.05;
+  }
+
+  .wrapper_header h1 span {
+    display: block;
+    margin-top: 0;
+    margin-left: 4.5em;
+  }
+
+  .buttons {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  
+  .button {
+    width: 40%;
+  } 
+
+  .athlets li {
+    padding-left: 50%;
+  }
+
+  .athlets h3 {
+    margin-left: 50%;
+    margin-top: 1em;
+  }
+
+  .players h3 {
+    margin-left: 10%;
+    margin-top: 1em;
+  }
+  
+  .players p {
+    width: 100%;
+  }
+  
+  .num_big {
+    margin-left: 45.5vw;
+    margin-top: 10%;
+  } 
+
+  .two {
+    right: 45.5vw;
+  }
+
+  .action .post:nth-child(even) {
+    flex-direction: row-reverse;
+    padding-bottom: 0;
+  }
+
+  .logo_text {
+    width: 190px;
+    height: 55px;
+    align-self: center;
+    top: -100px;
+  }
+
+  .logo {
+    width: 120px;
+    height: 120px;
+  }
+
+  .buttons .icon {
+    width: 45px;
+    height: 45px;
+  }
+
+  .title_foot {
+    align-items: flex-start;
+  }
+
+}
+
+@media (min-width: 1921px) {
+  body {
+    margin: 0 auto;
+  }
+}
